@@ -59,6 +59,11 @@
 }
 
 @media (max-width: 920px){
+    .padd-lat{
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
     .seccion-principal{
         .titulo{
             h1{
@@ -80,6 +85,11 @@
 }
 
 @media (max-width: 768px){
+    .padd-lat{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
     .btn-light{
         font-size: 1rem;
     }
