@@ -9,11 +9,11 @@
 }
 
 .ptp {
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 .pbt {
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
 }
 
 .btn-light {
@@ -257,7 +257,7 @@
 }
 
 .seccion-cita__imagen img {
-  width: 70%;
+  width: 90%;
 }
 
 .seccion-cita__btn {

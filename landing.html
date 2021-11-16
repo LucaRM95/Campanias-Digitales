@@ -12,49 +12,51 @@
     <title>Campañas digitales</title>
 </head>
 <body>
-    <section class="container-fluid seccion-principal">
-        <div class="row">
-            <div class="col-md-12 col-12 logo">
-                <img src="./assets/img/Logo.png" alt="logoCD">
-            </div>
-    
-            <div class="titulo">
-                <div class="col-md-12 col-12">
-                    <h4>Promociona tu marca</h4>
+    <section class="seccion-principal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 logo">
+                    <img src="./assets/img/Logo.png" alt="logoCD">
                 </div>
-                <div class="col-md-12 col-12">
-                    <h1>
-                        <p>Campañas</p> 
-                        <p>digitales</p>
-                    </h1>
+        
+                <div class="titulo">
+                    <div class="col-md-12 col-12">
+                        <h4>Promociona tu marca</h4>
+                    </div>
+                    <div class="col-md-12 col-12">
+                        <h1>
+                            <p>Campañas</p> 
+                            <p>digitales</p>
+                        </h1>
+                    </div>
+        
+                    <button class="btn btn-light mt-4 mb-3">Conoce mas...</button>
                 </div>
-    
-                <button class="btn btn-light mt-4 mb-3">Conoce mas...</button>
             </div>
+            <form action="">
+                <div class="row g-3">
+                    <div class="col-md-6 col-12">
+                        <input class="form-input" id="nombre-completo" type="text" placeholder="Nombre completo">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <input class="form-input" id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-12 col-12">
+                        <input id="consulta" type="text" class="form-input mt-3 mb-3" placeholder="Consulta">
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="politica-privacidad">
+                    <label class="form-check-label" for="politica-privacidad">He leído y acepto la política de privacidad</label>
+                </div>
+                <div class="form-button">
+                    <button class="btn btn-warning mb-5" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
-        <form action="">
-            <div class="row g-3">
-                <div class="col-md-6 col-12">
-                    <input class="form-input" id="nombre-completo" type="text" placeholder="Nombre completo">
-                </div>
-                <div class="col-md-6 col-12">
-                    <input class="form-input" id="email" type="email" placeholder="Email">
-                </div>
-                <div class="col-md-12 col-12">
-                    <input id="consulta" type="text" class="form-input mt-3 mb-3" placeholder="Consulta">
-                </div>
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="politica-privacidad">
-                <label class="form-check-label" for="politica-privacidad">He leído y acepto la política de privacidad</label>
-            </div>
-            <div class="form-button">
-                <button class="btn btn-warning mb-5" type="submit">Enviar</button>
-            </div>
-        </form>
     </section>
 
-    <section class="container-fluid seccion-secundaria pbt">
+    <section class="seccion-secundaria pbt">
         <div class="row fondo-flot">
             <div class="col-auto flotantes">
                 <p>Eso que nos 
@@ -62,34 +64,36 @@
                 identidad</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-12">
-                <h1>Todas las técnicas de difusión paga en el entorno digital</h1>
-                <p>Entendemos que la base de una buena campaña es su preparación previa. Ninguna iniciativa tendra éxito si depende únicamente de su invesión</p>
-            </div>
-            <div class="contenedor">
-                <div class="contenedor__parrafos">
-                    <div class="col-md-6 col-12 contenedor__parrafos--texto">
-                        <p>
-                            La planificación estratégica es fundamental. Los objetivos determinan la columna vertebral de una campaña.
-                        </p>
-                    </div>
-                    <div class="line ms-2"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <h1>Todas las técnicas de difusión paga en el entorno digital</h1>
+                    <p>Entendemos que la base de una buena campaña es su preparación previa. Ninguna iniciativa tendra éxito si depende únicamente de su invesión</p>
                 </div>
-                <div class="contenedor__parrafos">
-                    <div class="col-md-6 contenedor__parrafos--texto">
-                        <p>
-                            La difusión es un elemento vital de tu campaña.
-                        </p>
+                <div class="contenedor">
+                    <div class="contenedor__parrafos">
+                        <div class="col-md-6 col-12 contenedor__parrafos--texto">
+                            <p>
+                                La planificación estratégica es fundamental. Los objetivos determinan la columna vertebral de una campaña.
+                            </p>
+                        </div>
+                        <div class="line ms-2"></div>
                     </div>
-                    <div class="line ms-2"></div>
+                    <div class="contenedor__parrafos">
+                        <div class="col-md-6 contenedor__parrafos--texto">
+                            <p>
+                                La difusión es un elemento vital de tu campaña.
+                            </p>
+                        </div>
+                        <div class="line ms-2"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="seccion-cita ptp pbt">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row ">
                 <div class="col-md-6 col-12 seccion-cita__imagen">
                     <img src="./assets/img/Customer Testimonial.svg" alt="CT">
@@ -109,42 +113,44 @@
         </div>
     </section>
 
-    <section class="container-fluid seccion-secundaria ptp pbt">
-        <h1>Campañas de branding</h1>
-        <p>Una persona u organización tiene un primer desafío al salir a la arena política: hacerse conocida. En esta etapa el alcance y el reconocimiento son dos operaciones que guían todo el proceso.</p>
-        <div class="row contenedor">
-            <div class="col contenedor__parrafos">
-                <div class="contenedor__parrafos--texto">
-                    <h4>01 - Planificamos</h4>
-                    <p>
-                        Definimos principios en talleres
-                    </p>
+    <section class="seccion-secundaria ptp pbt">
+        <div class="container">
+            <h1>Campañas de branding</h1>
+            <p>Una persona u organización tiene un primer desafío al salir a la arena política: hacerse conocida. En esta etapa el alcance y el reconocimiento son dos operaciones que guían todo el proceso.</p>
+            <div class="row contenedor">
+                <div class="col contenedor__parrafos">
+                    <div class="contenedor__parrafos--texto">
+                        <h4>01 - Planificamos</h4>
+                        <p>
+                            Definimos principios en talleres
+                        </p>
+                    </div>
+                    <div class="line ms-2"></div>
                 </div>
-                <div class="line ms-2"></div>
-            </div>
-            <div class="col contenedor__parrafos">
-                <div class="contenedor__parrafos--texto">
-                    <h4>02 - Desarrollamos</h4>
-                    <p>
-                        Diseñamos el contenido
-                    </p>
+                <div class="col contenedor__parrafos">
+                    <div class="contenedor__parrafos--texto">
+                        <h4>02 - Desarrollamos</h4>
+                        <p>
+                            Diseñamos el contenido
+                        </p>
+                    </div>
+                    <div class="line ms-2"></div>
                 </div>
-                <div class="line ms-2"></div>
-            </div>
-            <div class="col contenedor__parrafos">
-                <div class="contenedor__parrafos--texto">
-                    <h4>03 - Anunciamos</h4>
-                    <p>
-                        Utilizamos los canales adecuados
-                    </p>
+                <div class="col contenedor__parrafos">
+                    <div class="contenedor__parrafos--texto">
+                        <h4>03 - Anunciamos</h4>
+                        <p>
+                            Utilizamos los canales adecuados
+                        </p>
+                    </div>
+                    <div class="line ms-2"></div>
                 </div>
-                <div class="line ms-2"></div>
             </div>
         </div>
     </section>
 
     <section class="seccion-consideracion">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6 col-12 seccion-cita__texto pbt">
                     <span>Que te tengan en cuenta</span>
