@@ -8,6 +8,46 @@
     src: url("../font/Comfortaa-Bold.ttf");
 }
 
+@mixin form ($w, $check-input_w, $check-input_h){
+    form{
+	width: $w;
+        input{
+            height: 3rem;
+            &[placeholder]{
+                font-size: 1.5rem;
+            }
+        }
+        .form-check-input{
+            width: $check-input_w !important;
+            height: $check-input_h !important;
+        }
+        .form-check-label{
+            padding-left: 1rem;
+            font-size: 1.5rem;
+        }
+        .form-check{
+            display: flex;
+            align-items: center;
+        }
+        .form-input{
+            width: 100%;
+        }
+        
+        #consulta{
+            width: 100%;
+        }
+        .form-button{
+            display: flex;
+            justify-content: space-between;
+        }        
+    }
+    input{
+        height: 35px;
+        border: none;
+        border-radius: 2px;
+    }
+}
+
 @mixin background_color( $color ) {
     background-color: $color;
 }
@@ -65,6 +105,33 @@
     }
 }
 
+.line{
+    background-color: rgb(106, 173, 196);
+    height: 3px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.line-discontinued{
+    background-image: linear-gradient(to right, #5f5f5f 50%, rgba(255,255,255,0) 0%) !important;
+    background-position: bottom;
+    background-size: 24px 10px; 
+    background-repeat: repeat-x;
+    height: 8px;
+    width: 45rem;
+}
+
+.white-line{
+    @extend .line;
+    @include background_color(white);
+}
+
+.floatEnd{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 /*Seccion 1*/
 .seccion-principal{
     height: auto;
@@ -86,43 +153,7 @@
             font-size: 100px;
         }
     }
-    form{
-        width: 50%;
-        input{
-            height: 3rem;
-            &[placeholder]{
-                font-size: 1.5rem;
-            }
-        }
-        .form-check-input{
-            width: 1.2em !important;
-            height: 1.2em !important;
-        }
-        .form-check-label{
-            padding-left: 1rem;
-            font-size: 1.5rem;
-        }
-        .form-check{
-            display: flex;
-            align-items: center;
-        }
-        .form-input{
-            width: 100%;
-        }
-        
-        #consulta{
-            width: 100%;
-        }
-        .form-button{
-            display: flex;
-            justify-content: flex-end;
-        }        
-    }
-    input{
-        height: 35px;
-        border: none;
-        border-radius: 2px;
-    }
+    @include form( 50%, 1.2em, 1.2em);
 }
 
 /*Seccion 2 y 4*/
@@ -139,12 +170,6 @@
     }
     p{
         font-size: 1.3rem;
-    }
-    .line{
-        background-color: rgb(106, 173, 196);
-        height: 3px;
-        border-radius: 10px;
-        width: 50%;
     }
     .contenedor{
         display: flex;
@@ -182,6 +207,18 @@
     }
 }
 
+.fondo-flot-sec{
+    @extend .fondo-flot;
+    .flotantes {
+        width: 395px;
+        height: 390px; 
+        p {
+            padding: 4rem;
+            font-size: 1.4rem; 
+        } 
+    }
+}
+
 /*Seccion 3*/
 .seccion-cita{
     @include background_color(#F27F1B);
@@ -197,6 +234,9 @@
         p{
             font-size: 1.2rem;
         }
+        strong{
+            font-size: 1.5rem;
+        }
     }
     &__imagen{
         display: flex;
@@ -206,9 +246,17 @@
             width: 90%;
         }
     }
+    .logo{
+        padding-top: 60px;
+        padding-bottom: 140px;
+        img{
+            width: 150px;
+        }
+    }
     &__btn{
         display: flex;
     }
+    @include form( 100%, 2em, 2em);
 }
 
 /*Seccion 5*/

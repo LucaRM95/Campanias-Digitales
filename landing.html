@@ -9,11 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Campañas digitales</title>
 </head>
 <body>
     <section class="seccion-principal">
-        <div class="container-fluid padd-lat">
+        <div data-aos="fade-right" class="container-fluid padd-lat">
             <div class="row">
                 <div class="col-md-12 col-12 logo">
                     <img src="./assets/img/Logo.png" alt="logoCD">
@@ -58,7 +60,7 @@
 
     <section class="seccion-secundaria pbt">
         <div class="row fondo-flot">
-            <div class="col-auto flotantes">
+            <div data-aos="fade-right" class="col-auto flotantes">
                 <p>Eso que nos 
                 da nombre e
                 identidad</p>
@@ -66,12 +68,12 @@
         </div>
         <div class="container-fluid">
             <div class="row padd-lat">
-                <div class="col-md-12 col-12">
+                <div data-aos="fade-right" class="col-md-12 col-12">
                     <h1>Todas las técnicas de difusión paga en el entorno digital</h1>
                     <p>Entendemos que la base de una buena campaña es su preparación previa. Ninguna iniciativa tendra éxito si depende únicamente de su invesión</p>
                 </div>
                 <div class="contenedor">
-                    <div class="contenedor__parrafos">
+                    <div data-aos="fade-right" class="contenedor__parrafos">
                         <div class="col-md-6 col-12 contenedor__parrafos--texto">
                             <p>
                                 La planificación estratégica es fundamental. Los objetivos determinan la columna vertebral de una campaña.
@@ -79,7 +81,7 @@
                         </div>
                         <div class="line ms-2"></div>
                     </div>
-                    <div class="contenedor__parrafos">
+                    <div data-aos="fade-right" class="contenedor__parrafos">
                         <div class="col-md-6 contenedor__parrafos--texto">
                             <p>
                                 La difusión es un elemento vital de tu campaña.
@@ -93,7 +95,7 @@
     </section>
 
     <section class="seccion-cita padd-lat ptp pbt">
-        <div class="container-fluid">
+        <div data-aos="fade-right" class="container-fluid">
             <div class="row ">
                 <div class="col-md-6 col-12 seccion-cita__imagen">
                     <img src="./assets/img/Customer Testimonial.svg" alt="CT">
@@ -115,11 +117,13 @@
 
     <section class="seccion-secundaria padd-lat ptp pbt">
         <div class="container-fluid">
-            <h1>Campañas de branding</h1>
-            <p>Una persona u organización tiene un primer desafío al salir a la arena política: hacerse conocida. En esta etapa el alcance y el reconocimiento son dos operaciones que guían todo el proceso.</p>
+            <div data-aos="fade-right">
+                <h1>Campañas de branding</h1>
+                <p>Una persona u organización tiene un primer desafío al salir a la arena política: hacerse conocida. En esta etapa el alcance y el reconocimiento son dos operaciones que guían todo el proceso.</p>
+            </div>
             <div class="row contenedor">
                 <div class="col contenedor__parrafos">
-                    <div class="contenedor__parrafos--texto">
+                    <div data-aos="fade-right" class="contenedor__parrafos--texto">
                         <h4>01 - Planificamos</h4>
                         <p>
                             Definimos principios en talleres
@@ -127,7 +131,7 @@
                     </div>
                     <div class="line ms-2"></div>
                 </div>
-                <div class="col contenedor__parrafos">
+                <div data-aos="fade-right" class="col contenedor__parrafos">
                     <div class="contenedor__parrafos--texto">
                         <h4>02 - Desarrollamos</h4>
                         <p>
@@ -136,7 +140,7 @@
                     </div>
                     <div class="line ms-2"></div>
                 </div>
-                <div class="col contenedor__parrafos">
+                <div data-aos="fade-right" class="col contenedor__parrafos">
                     <div class="contenedor__parrafos--texto">
                         <h4>03 - Anunciamos</h4>
                         <p>
@@ -150,7 +154,7 @@
     </section>
 
     <section class="seccion-consideracion padd-lat">
-        <div class="container-fluid">
+        <div data-aos="fade-right" class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-12 seccion-cita__texto pbt">
                     <span>Que te tengan en cuenta</span>
@@ -173,6 +177,13 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1200,  
+        });
+    </script>
     <!-- Inicio Js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>

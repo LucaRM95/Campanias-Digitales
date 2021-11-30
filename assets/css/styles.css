@@ -67,6 +67,37 @@
   transition: 300ms all;
 }
 
+.line, .white-line {
+  background-color: #6aadc4;
+  height: 3px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.line-discontinued {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #5f5f5f), color-stop(0%, rgba(255, 255, 255, 0))) !important;
+  background-image: linear-gradient(to right, #5f5f5f 50%, rgba(255, 255, 255, 0) 0%) !important;
+  background-position: bottom;
+  background-size: 24px 10px;
+  background-repeat: repeat-x;
+  height: 8px;
+  width: 45rem;
+}
+
+.white-line {
+  background-color: white;
+  margin-top: 5rem;
+}
+
+.floatEnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 /*Seccion 1*/
 .seccion-principal {
   height: auto;
@@ -137,9 +168,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .seccion-principal input {
@@ -166,13 +197,6 @@
 
 .seccion-secundaria p {
   font-size: 1.3rem;
-}
-
-.seccion-secundaria .line {
-  background-color: #6aadc4;
-  height: 3px;
-  border-radius: 10px;
-  width: 50%;
 }
 
 .seccion-secundaria .contenedor {
@@ -206,7 +230,7 @@
 }
 
 /*Cuadro flotante*/
-.fondo-flot {
+.fondo-flot, .fondo-flot-sec {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), color-stop(49%, #072740));
   background: linear-gradient(0deg, white 70%, #072740 49%);
   -webkit-box-pack: end;
@@ -214,7 +238,7 @@
           justify-content: flex-end;
 }
 
-.fondo-flot .flotantes {
+.fondo-flot .flotantes, .fondo-flot-sec .flotantes {
   background-color: #69A7BF;
   color: white;
   width: 285px;
@@ -228,9 +252,19 @@
   border-radius: 50px 0 0 50px;
 }
 
-.fondo-flot .flotantes p {
+.fondo-flot .flotantes p, .fondo-flot-sec .flotantes p {
   padding: 25px;
   font-size: 2rem;
+}
+
+.fondo-flot-sec .flotantes {
+  width: 395px;
+  height: 390px;
+}
+
+.fondo-flot-sec .flotantes p {
+  padding: 4rem;
+  font-size: 1.4rem;
 }
 
 /*Seccion 3*/
@@ -252,6 +286,10 @@
   font-size: 1.2rem;
 }
 
+.seccion-cita__texto strong {
+  font-size: 1.5rem;
+}
+
 .seccion-cita__imagen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,10 +303,73 @@
   width: 90%;
 }
 
+.seccion-cita .logo, .seccion-consideracion .logo {
+  padding-top: 60px;
+  padding-bottom: 140px;
+}
+
+.seccion-cita .logo img, .seccion-consideracion .logo img {
+  width: 150px;
+}
+
 .seccion-cita__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.seccion-cita form, .seccion-consideracion form {
+  width: 100%;
+}
+
+.seccion-cita form input, .seccion-consideracion form input {
+  height: 3rem;
+}
+
+.seccion-cita form input[placeholder], .seccion-consideracion form input[placeholder] {
+  font-size: 1.5rem;
+}
+
+.seccion-cita form .form-check-input, .seccion-consideracion form .form-check-input {
+  width: 2em !important;
+  height: 2em !important;
+}
+
+.seccion-cita form .form-check-label, .seccion-consideracion form .form-check-label {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.seccion-cita form .form-check, .seccion-consideracion form .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion-cita form .form-input, .seccion-consideracion form .form-input {
+  width: 100%;
+}
+
+.seccion-cita form #consulta, .seccion-consideracion form #consulta {
+  width: 100%;
+}
+
+.seccion-cita form .form-button, .seccion-consideracion form .form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.seccion-cita input, .seccion-consideracion input {
+  height: 35px;
+  border: none;
+  border-radius: 2px;
 }
 
 /*Seccion 5*/
@@ -336,6 +437,16 @@
   }
 }
 
+@media (max-width: 1060px) {
+  .padd-lat {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .seccion-secundaria h1 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 920px) {
   .padd-lat {
     padding-left: 0.4rem;
@@ -394,11 +505,19 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .fondo-flot .flotantes {
+  .fondo-flot .flotantes, .fondo-flot-sec .flotantes {
     width: 145px;
     height: 200px;
   }
-  .fondo-flot .flotantes p {
+  .fondo-flot .flotantes p, .fondo-flot-sec .flotantes p {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  .fondo-flot-aux .flotantes {
+    width: 235px;
+    height: 265px;
+  }
+  .fondo-flot-aux .flotantes p {
     padding: 20px;
     font-size: 1rem;
   }
